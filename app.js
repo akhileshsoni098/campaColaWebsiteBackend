@@ -23,6 +23,9 @@ app.get("/", async (req, res) => {
 });
 
 
+const admin = require("./routing");
+
+app.use("/admin", admin);
 
 
 module.exports = app;
